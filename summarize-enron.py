@@ -282,8 +282,7 @@ def create_and_zip_folder():
         shutil.move(source + file, destination)
 
     # Zip folder
-    shutil.make_archive('Output', 'zip',
-                        root_dir=destination)
+    shutil.make_archive('Output', 'zip', root_dir=destination)
     shutil.rmtree(destination)
 
 person_data(data)
